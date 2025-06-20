@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background: #b23a48;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: #fdebd0;
+}
+
+section {
+  padding: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu .item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  flex: 1 1 30%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px #ccc;
+}
+
+.reservation form {
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #b23a48;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a02e3e;
+}
+
+.events .event {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #b23a48;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
