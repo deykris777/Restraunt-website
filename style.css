@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,41 +13,85 @@ body {
 }
 
 header {
-  background: #b23a48;
+  background: #8b3a1e;
   color: #fff;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .hero {
-  padding: 2rem;
   text-align: center;
   background: #fdebd0;
+  padding: 2rem 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 section {
-  padding: 2rem;
+  padding: 2rem 1rem;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Rye', serif;
+  font-size: 2rem;
+  color: #8b3a1e;
 }
 
 .menu-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .menu .item {
-  background: #fff;
+  background: #fff8ec;
   padding: 1rem;
+  border-radius: 10px;
   border: 1px solid #ddd;
-  flex: 1 1 30%;
-  border-radius: 8px;
   box-shadow: 2px 2px 6px #ccc;
+  width: 250px;
+  text-align: center;
+}
+
+.menu .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.reservation h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Rye', serif;
+  color: #8b3a1e;
 }
 
 .reservation form {
@@ -62,13 +108,21 @@ input, button {
 }
 
 button {
-  background: #b23a48;
+  background: #e36c2b;
   color: white;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: #a02e3e;
+  background: #c6541b;
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Rye', serif;
+  color: #8b3a1e;
 }
 
 .events .event {
@@ -76,6 +130,7 @@ button:hover {
   padding: 1rem;
   margin-top: 1rem;
   border-left: 5px solid #b23a48;
+  box-shadow: 2px 2px 6px #ccc;
 }
 
 footer {
@@ -84,4 +139,77 @@ footer {
   color: white;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .item {
+    width: 90%;
+  }
+
+  .hero-img {
+    max-height: 200px;
+  }
+}
+
+.intro {
+  background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8bb6f60c-9f1c-452f-a530-84f0a7ecf55d.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.intro-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Rye', serif;
+  letter-spacing: 1px;
+  color: #ffe8b2;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fffbdc;
+  font-style: italic;
+}
+
+.enter-btn {
+  padding: 0.8rem 1.5rem;
+  background: #e36c2b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.enter-btn:hover {
+  background: #c6541b;
 }

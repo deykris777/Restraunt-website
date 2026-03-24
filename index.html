@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gourmet Haven</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Tadka</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>Gourmet Haven</h1>
-    <nav>
-      <a href="#menu">Menu</a>
-      <a href="#reservation">Reservation</a>
-      <a href="#events">Events</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Welcome to Fine Dining</h2>
-    <p>Exquisite flavors, elegant ambiance, unforgettable moments.</p>
-  </section>
-
-  <section id="menu" class="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-      <div class="item"><h3>Margherita Pizza</h3><p>₹299</p></div>
-      <div class="item"><h3>Grilled Salmon</h3><p>₹799</p></div>
-      <div class="item"><h3>Caesar Salad</h3><p>₹199</p></div>
+  <section class="intro">
+    <div class="intro-content">
+      <h1>Urban Tadka</h1>
+      <p>Traditional Taste with a Modern Twist</p>
+      <a href="#main-site" class="enter-btn">Enter Site</a>
     </div>
   </section>
 
-  <section id="reservation" class="reservation">
-    <h2>Book a Table</h2>
-    <form id="reservation-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="date" required>
-      <input type="time" required>
-      <input type="number" placeholder="Guests" required min="1">
-      <button type="submit">Reserve Now</button>
-    </form>
-  </section>
+  <div id="main-site">
+    <header>
+      <h1>Urban Tadka</h1>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#events">Events</a>
+      </nav>
+    </header>
 
-  <section id="events" class="events">
-    <h2>Upcoming Events</h2>
-    <div class="event">
-      <h3>Jazz Nights – Every Friday</h3>
-      <p>Live music, fine wine, and amazing food.</p>
-    </div>
-    <div class="event">
-      <h3>Wine Tasting – 20th June</h3>
-      <p>Explore world-class wines with our sommelier.</p>
-    </div>
-  </section>
+    <section class="hero">
+      <h2>Welcome to Fine Dining</h2>
+      <p>Exquisite flavors, elegant ambiance, unforgettable moments.</p>
+    </section>
 
-  <footer>
-    <p>© 2025 Gourmet Haven. All rights reserved.</p>
-  </footer>
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="item"><img src="images/pizza.jpg" alt="Margherita Pizza"><h3>Margherita Pizza</h3><p>₹299</p></div>
+        <div class="item"><img src="images/salmon.jpg" alt="Grilled Salmon"><h3>Grilled Salmon</h3><p>₹799</p></div>
+        <div class="item"><img src="images/salad.jpg" alt="Caesar Salad"><h3>Caesar Salad</h3><p>₹199</p></div>
+        <div class="item"><img src="images/butter_chicken.jpg" alt="Butter Chicken"><h3>Butter Chicken</h3><p>₹349</p></div>
+        <div class="item"><img src="images/paneer_tikka.jpg" alt="Paneer Tikka"><h3>Paneer Tikka</h3><p>₹299</p></div>
+        <div class="item"><img src="images/biryani.jpg" alt="Hyderabadi Biryani"><h3>Hyderabadi Biryani</h3><p>₹399</p></div>
+        <div class="item"><img src="images/sushi.jpg" alt="Sushi Platter"><h3>Sushi Platter</h3><p>₹899</p></div>
+        <div class="item"><img src="images/tacos.jpg" alt="Mexican Tacos"><h3>Mexican Tacos</h3><p>₹349</p></div>
+        <div class="item"><img src="images/spaghetti.jpg" alt="Spaghetti Bolognese"><h3>Spaghetti Bolognese</h3><p>₹449</p></div>
+        <div class="item"><img src="images/pancakes.jpg" alt="Classic Pancakes"><h3>Classic Pancakes</h3><p>₹199</p></div>
+        <div class="item"><img src="images/naan.jpg" alt="Garlic Naan"><h3>Garlic Naan</h3><p>₹49</p></div>
+        <div class="item"><img src="images/kebab.jpg" alt="Mutton Seekh Kebab"><h3>Mutton Seekh Kebab</h3><p>₹449</p></div>
+        <div class="item"><img src="images/thali.jpg" alt="Deluxe Veg Thali"><h3>Deluxe Veg Thali</h3><p>₹299</p></div>
+        <div class="item"><img src="images/burger.jpg" alt="Cheese Burger"><h3>Cheese Burger</h3><p>₹249</p></div>
+        <div class="item"><img src="images/falafel.jpg" alt="Falafel Wrap"><h3>Falafel Wrap</h3><p>₹279</p></div>
+        <div class="item"><img src="images/tandoori_chicken.jpg" alt="Tandoori Chicken"><h3>Tandoori Chicken</h3><p>₹349</p></div>
+        <div class="item"><img src="images/chowmein.jpg" alt="Veg Chowmein"><h3>Veg Chowmein</h3><p>₹199</p></div>
+        <div class="item"><img src="images/dosa.jpg" alt="Masala Dosa"><h3>Masala Dosa</h3><p>₹149</p></div>
+        <div class="item"><img src="images/ramen.jpg" alt="Japanese Ramen"><h3>Japanese Ramen</h3><p>₹499</p></div>
+        <div class="item"><img src="images/icecream.jpg" alt="Ice Cream Sundae"><h3>Ice Cream Sundae</h3><p>₹159</p></div>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+      <h2>Book a Table</h2>
+      <form id="reservation-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="time" required>
+        <input type="number" placeholder="Guests" required min="1">
+        <button type="submit">Reserve Now</button>
+        <div id="form-feedback"></div>
+      </form>
+    </section>
+
+    <section id="events" class="events">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <h3>Jazz Nights – Every Friday</h3>
+        <p>Live music, fine wine, and amazing food.</p>
+      </div>
+      <div class="event">
+        <h3>Wine Tasting – 20th June</h3>
+        <p>Explore world-class wines with our sommelier.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Urban Tadka. All rights reserved.</p>
+      <p>Contact us: +91-9876543210 | contact@urbantadka.com</p>
+      <p>Address: 123 Food Street, New Delhi, India</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
